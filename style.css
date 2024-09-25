@@ -1,0 +1,102 @@
+* {
+    font-family:'Poppins','sans-serif';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background:linear-gradient(135deg,#153677,#4e085f);
+}
+.container
+{
+    background-color: white;
+    width: 400px;
+    min-height: 180px;
+    margin:150px auto;
+    border-radius: 10px;
+}
+.title
+{
+    padding: 15px;
+}
+.search
+{
+    position: relative;
+}
+.search input
+{
+    margin-left: 20px;
+    padding: 15px 15px;
+    width: 80%;
+    border:none;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+.search button
+{
+    padding: 12px 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+    transition: 0.5s ease-in;
+    position: absolute;
+    top: -1px;
+    right: 15px;
+}
+button:hover
+{
+    background-color: black;
+    cursor: pointer;
+}
+
+.result p
+{
+    padding: 15px 35px;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.result p::before
+{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(img/unChecked.webp);
+    background-size: cover;
+    background-position: center;
+    left: 3px;
+    top: 12px;
+    cursor: pointer;
+}
+.checked
+{
+    color: #555;
+    text-decoration: line-through;
+}
+.result .checked::before
+{
+    background-image: url(img/checked.webp);
+}
+.result p span
+{
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+
+}
+.result p span:hover
+{
+    background: #edeef0;
+    cursor: pointer;
+}
